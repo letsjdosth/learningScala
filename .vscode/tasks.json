@@ -1,0 +1,21 @@
+{
+    // https://code.visualstudio.com/docs/editor/variables-reference
+    // args가 임시방편이긴한데 (2개이상폴더중첩시 안돌아갈것임) 일단이렇게둠
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "scala",
+            "type": "shell",
+            "command": "scala",
+            "args": [
+                "C:/gitproject/learningScala/${relativeFileDirname}/${fileBasename}",
+                // "C:/gitproject/learningScala/${fileBasename}",
+                // "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
