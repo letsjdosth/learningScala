@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "scala",
+            "label": "scala_repl",
             "type": "shell",
             "command": "scala",
             "args": [

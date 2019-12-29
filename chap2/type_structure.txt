@@ -1,0 +1,17 @@
+Any(abstract)
+|
+Anyval(abstract)    AnyRef(abstract)
+|                   |
+Numeric types       Collections
+Char                Classes
+Boolean             String
+
+
+||
+Null
+|   ||
+Nothing(used only compile time to return a comparable value for all types)
+
+
+//
+Unit (: void in C, java)
