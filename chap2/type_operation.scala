@@ -1,7 +1,7 @@
 // 모든 타입 공통 method
 
 // <name>.getClass              : <name>의 타입 반환
-// <name>.isInstanceOf[<type>]  : <name>이 <type>이면 true, 아니면 false
+// <name>.isInstanceOf[<type>]  : <name>이 <type>이면 true, 아니면 false (대괄호임에 주의)
 // <name>.asInstanceof[<type>]  : <name>을 <type>으로 캐스팅 (안쓰는것이 좋음. 타입이 호환 불가능 시 런타임 에러남)
 // <name>.to<type>              : <name>을 <type>으로 캐스팅
 // <name>.toString              : <name>을 String으로 캐스팅
