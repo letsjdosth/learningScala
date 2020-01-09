@@ -1,4 +1,4 @@
-// List, Set, Map : invariant, type-argumented collections
+// List, Set, Map : immutable, type-argumented collections
 // 셋다 불변임!
 // 연결 리스트로 구현되어있음
 
