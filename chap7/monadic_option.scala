@@ -70,3 +70,18 @@ println(exactSize) //None
 // 하지만 이건, Option이 None일때 곧바로 에러남(no such element)
 // <-에러에 안전하지 않음. 이거 쓰지 말자
 
+// idea : 기본값 등이 있는 함수로 돌려서 꺼내자
+def nextOption = if (util.Random.nextInt > 0) Some(1) else None
+val ex1 = nextOption
+val ex2 = nextOption
+println(ex1, ex2)
+
+println(nextOption.fold(-1)(x=>x)) // fold 이용: None이면 -1, 아니면 Some(x)의 x 반환
+println(nextOption getOrElse 5) // getOrElse 이용 : None이면 5, 아니면 Some(x)의 x 반환
+println(nextOption getOrElse {println("Error!"); -1}) //None이면 뒤 블록 실행
+println(nextOption orElse nextOption) // orElse 이용: None이면 None 반환함 (흠)
+val res = nextOption match { //match 표현식 이용
+    case Some(x) => x
+    case None => -1
+}
+println(res)
